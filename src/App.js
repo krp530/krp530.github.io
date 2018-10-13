@@ -1,17 +1,17 @@
-import { Route, Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom'
 import About from './containers/About'
 import Counter from './containers/Counter'
 import Todo from './containers/Todo'
 import Home from './containers/Home'
 import React, { Component } from 'react';
 import Reference from './modules/reference/Reference'
+import LandingPage from './modules/landingPage/LandingPage'
 import logo from './logo.svg';
 import './App.css';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 class App extends Component {
   render() {
-    console.log('11111', this.props)
     const { t, i18n } = this.props;
 
     const changeLanguage = (lng) => {
@@ -20,7 +20,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+        </Switch>
+
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">{t('title')}</h1>
         </header>

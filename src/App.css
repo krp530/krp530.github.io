@@ -1,3 +1,10 @@
+*, *:before, *:after {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+}
 .App {
   text-align: center;
 }
