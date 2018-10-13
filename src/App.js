@@ -31,7 +31,7 @@ class App extends Component {
         </div>
 
         <main>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" render={props => <Home changeLanguage={changeLanguage} {...props} />} />
           <Route exact path="/about-us" component={About} />
           <Route exact path="/counter" component={Counter} />
           <Route exact path="/todo" component={Todo} />
