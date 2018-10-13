@@ -11,6 +11,7 @@ import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 class App extends Component {
   render() {
+    console.log('11111', this.props)
     const { t, i18n } = this.props;
 
     const changeLanguage = (lng) => {
@@ -31,7 +32,7 @@ class App extends Component {
         </div>
 
         <main>
-          <Route exact path="/" render={props => <Home changeLanguage={changeLanguage} {...props} />} />
+          <Route exact path="/" render={props => <Home {...this.props} />} />
           <Route exact path="/about-us" component={About} />
           <Route exact path="/counter" component={Counter} />
           <Route exact path="/todo" component={Todo} />

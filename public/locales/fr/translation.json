@@ -1,7 +1,9 @@
 {
-  "title": "Willkommen zu React und react-i18next",
+  "title": "Bienvenue à réagir en utilisant React-i18next",
   "description": {
-    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> speicheren und neuladen.",
-    "part2": "Ändere die Sprachen zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+    "part1":
+      "Celui-ci a une <1>mise en forme de texte enrichi spéciale</1> dans le fichier de traduction!",
+    "part2":
+      "Changez de langue entre l'anglais et l'allemand en utilisant les boutons ci-dessus."
   }
 }
