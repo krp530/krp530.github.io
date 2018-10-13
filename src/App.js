@@ -42,7 +42,7 @@ class App extends Component {
         </Trans>
 
         <Switch>
-          <Route exact path="/" render={() => <LandingPage t={t} />} />
+          <Route exact path="/" render={() => <LandingPage />} />
         </Switch>
 
         {/* <header className="App-header">

@@ -5,5 +5,6 @@
       "Celui-ci a une <1>mise en forme de texte enrichi spéciale</1> dans le fichier de traduction!",
     "part2":
       "Changez de langue entre l'anglais et l'allemand en utilisant les boutons ci-dessus."
-  }
+  },
+  "langselect":"Veuillez choisir votre langue"
 }

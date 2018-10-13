@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { welcomes } from '../../data/languages';
 import LanguageSelector from './LanguageSelector';
 import MapBackground from './MapBackground';
+import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 const styles = (theme) => ({
   root: {
@@ -67,7 +68,7 @@ class LandingPage extends React.Component {
         <div className={classes.contentContainer}>
           <div className={classes.titleContainer}>
             <Typography variant="h4">{welcome}</Typography>
-            <Typography className={classes.subtitle} variant="subtitle1">{t('Please Select Your Language')}</Typography>
+            <Typography className={classes.subtitle} variant="subtitle1">{t('langselect')}</Typography>
           </div>
           <div className={classes.languageSelectorContainer}>
             <LanguageSelector />
@@ -79,4 +80,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(styles)(LandingPage)
+export default withStyles(styles)(withNamespaces('translation')(LandingPage))
