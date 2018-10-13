@@ -12,6 +12,17 @@ const styles = (theme) => ({
     padding: theme.spacing.unit * 2,
     paddingTop: theme.spacing.unit * 4,
   },
+  contentContainer: {
+    height: '100%',
+    textAlign: 'center',
+    maxWidth: 480,
+  },
+  titleContainer: {
+    height: '20%',
+  },
+  languageSelectorContainer: {
+    height: '80%',
+  },
   subtitle: {
     marginTop: theme.spacing.unit / 4,
     marginBottom: theme.spacing.unit * 2,
@@ -48,20 +59,22 @@ class LandingPage extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     const { welcome } = this.state;
 
     return (
-      <Grid container spacing={24} className={classes.root} direction="row">
-        <Grid item xs={12}>
-          <Typography variant="h4">{welcome}</Typography>
-          <Typography className={classes.subtitle} variant="subtitle1">Please Select Your Language</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <LanguageSelector />
-        </Grid>
+      <div className={classes.root}>
+        <div className={classes.contentContainer}>
+          <div className={classes.titleContainer}>
+            <Typography variant="h4">{welcome}</Typography>
+            <Typography className={classes.subtitle} variant="subtitle1">{t('Please Select Your Language')}</Typography>
+          </div>
+          <div className={classes.languageSelectorContainer}>
+            <LanguageSelector />
+          </div>
+        </div>
         <MapBackground />
-      </Grid>
+      </div>
     )
   }
 }

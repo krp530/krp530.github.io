@@ -1,4 +1,19 @@
-const languages = [
+export const languages = [
+  {
+    label: 'English',
+    value: 'en',
+  },
+  {
+    label: 'Deutsch',
+    value: 'de',
+  },
+  {
+    label: 'Français',
+    value: 'fr',
+  },
+]
+
+export const languageNames = [
   "Afrikaans - Afrikaans",
   "Albanian - Shqip",
   "Amahuaca - Amahuaca",
@@ -101,18 +116,28 @@ const languages = [
   "Yoruba - Yorùbá",
   "Zulu - IsiZulu",
 ]
+// export const welcomes = [
+//   "Welcome to America",
+//   "Bienvenido a América",
+//   "مرحبًا بك في أمريكا",
+//   "Welkom in Amerika",
+//   "欢迎来到美国",
+//   "Bienvenue en Amérique",
+//   "Välkommen till Amerika",
+//   "Willkommen in Amerika",
+//   "Добро пожаловать в Америку",
+//   "Dobrodošli u Ameriku",
+// ]
 
 export const welcomes = [
-  "Welcome to America",
-  "Bienvenido a América",
-  "مرحبًا بك في أمريكا",
-  "Welkom in Amerika",
-  "欢迎来到美国",
-  "Bienvenue en Amérique",
-  "Välkommen till Amerika",
-  "Willkommen in Amerika",
-  "Добро пожаловать в Америку",
-  "Dobrodošli u Ameriku",
+  "Welcome",
+  "Bienvenido",
+  "أهلا بك",
+  "Welkom",
+  "欢迎",
+  "Bienvenue",
+  "Välkommen",
+  "Willkommen",
+  "желанный",
+  "Dobrodošli",
 ]
-
-export default languages

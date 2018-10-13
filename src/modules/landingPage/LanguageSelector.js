@@ -1,16 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 import Paper from '@material-ui/core/Paper';
 import TranslateIcon from '@material-ui/icons/Translate';
-import languages from '../../data/languages';
+import { languageNames } from '../../data/languages';
 import _map from 'lodash/map';
 
 const styles = (theme) => ({
   root: {
     height: '100%',
+    overflowX: 'hidden',
+    overflowY: 'auto',
+    background: 'rgba(255, 255, 255, .5)',
   },
 })
 
@@ -19,7 +23,7 @@ class LanguageSelector extends React.Component {
     super(props);
 
     this.state = {
-      language: languages[0],
+      language: languageNames[0],
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -36,21 +40,14 @@ class LanguageSelector extends React.Component {
     const { language } = this.state;
 
     return (
-      <Paper>
-        <TextField
-          select
-          value={language}
-          onChange={this.handleChange}
-          InputProps={{
-            startAdornment: <InputAdornment position="start"><TranslateIcon /></InputAdornment>,
-          }}
-        >
+      <Paper className={classes.root}>
+        <List>
           {
-            _map(languages, (language) => (
-              <MenuItem key={language} value={language}>{language}</MenuItem>
+            _map(languageNames, (language) => (
+              <ListItem button to='/step1' component={Link} key={language} value={language}>{language}</ListItem>
             ))
           }
-        </TextField>
+        </List>
       </Paper>
     )
   }

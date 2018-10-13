@@ -1,27 +1,48 @@
-import { Switch, Route, Link } from 'react-router-dom'
-import About from './containers/About'
-import Counter from './containers/Counter'
-import Todo from './containers/Todo'
-import Home from './containers/Home'
+import { Switch, Route, Link } from 'react-router-dom';
+import { withStyles } from '@material-ui/core/styles';
+// import About from './containers/About';
+// import Counter from './containers/Counter';
+// import Todo from './containers/Todo';
+// import Home from './containers/Home';
 import React, { Component } from 'react';
-import Reference from './modules/reference/Reference'
-import LandingPage from './modules/landingPage/LandingPage'
+import Reference from './modules/reference/Reference';
+import LandingPage from './modules/landingPage/LandingPage';
+import AppBar from './modules/AppBar';
 import logo from './logo.svg';
 import './App.css';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
-class App extends Component {
-  render() {
-    const { t, i18n } = this.props;
+const styles = (theme) => ({
+  root: {
+    paddingTop: theme.spacing.unit * 7
+  },
+})
 
-    const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
-    }
+class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.changeLanguage = this.changeLanguage.bind(this);
+  }
+
+  changeLanguage(lng) {
+    const { i18n } = this.props;
+
+    i18n.changeLanguage(lng);
+  }
+
+  render() {
+    const { classes, t } = this.props;
 
     return (
-      <div className="App">
+      <div className={classes.root}>
+        <AppBar position="static" changeLanguage={this.changeLanguage} />
+        <Trans i18nKey="description.part1">
+          This one has <b>special rich-text formatting</b> in the translation file!
+        </Trans>
+
         <Switch>
-          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/" render={() => <LandingPage t={t} />} />
         </Switch>
 
         {/* <header className="App-header">
@@ -41,10 +62,10 @@ class App extends Component {
           <Route exact path="/counter" component={Counter} />
           <Route exact path="/todo" component={Todo} />
         </main>
-        <Reference />
+        <Reference /> */}
       </div>
     );
   }
 }
 
-export default withNamespaces('translation')(App);
+export default withStyles(styles)(withNamespaces('translation')(App));
