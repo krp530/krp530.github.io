@@ -1,10 +1,11 @@
+import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 // import About from './containers/About';
 // import Counter from './containers/Counter';
 // import Todo from './containers/Todo';
 // import Home from './containers/Home';
-import React, { Component } from 'react';
+import Question from './modules/Question';
 import Reference from './modules/reference/Reference';
 import LandingPage from './modules/landingPage/LandingPage';
 import AppBar from './modules/AppBar';
@@ -14,7 +15,8 @@ import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 const styles = (theme) => ({
   root: {
-    paddingTop: theme.spacing.unit * 7
+    paddingTop: theme.spacing.unit * 7,
+    height: '100%',
   },
 })
 
@@ -43,6 +45,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" render={() => <LandingPage />} />
+          <Route exact path="/step1" render={() => <Question question="Are you more creative or mechanical?" />} />
         </Switch>
 
         {/* <header className="App-header">
