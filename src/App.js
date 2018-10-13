@@ -7,14 +7,21 @@ import React, { Component } from 'react';
 import Reference from './modules/reference/Reference'
 import logo from './logo.svg';
 import './App.css';
+import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 class App extends Component {
   render() {
+    const { t, i18n } = this.props;
+
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    }
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">{t('title')}</h1>
         </header>
         <div className="Links">
           <Link to="/">Home</Link>
@@ -35,4 +42,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withNamespaces('translation')(App);
