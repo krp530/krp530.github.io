@@ -1,0 +1,9 @@
+{
+  "title": "Willkommen zu react und react-i18next",
+  "description": {
+    "part1":
+      "Dieser hat eine <1>spezielle Rich-Text-Formatierung</1> in der Übersetzungsdatei!",
+    "part2":
+      "Ändere die Sprachen zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Welcome to React using react-i18next",
+  "description": {
+    "part1": "This one has <1>special rich-text formatting</1> in the translation file!",
+    "part2": "Switch language between english and german using buttons above."
+  }
+}

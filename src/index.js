@@ -5,6 +5,7 @@ import store, { history } from './store'
 import App from './App'
 import React from 'react'
 import registerServiceWorker from './registerServiceWorker';
+import './i18n';
 
 const target = document.querySelector('#root')
 
