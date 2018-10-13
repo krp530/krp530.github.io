@@ -17,6 +17,8 @@ const Home = props => {
       <Trans i18nKey="description.part1">
         This one has <b>special rich-text formatting</b> in the translation file!
       </Trans>
+      <br/>
+      <br/>
       <button onClick={() => changeLanguage('fr')}>Switch to FRENCH</button>
       <button onClick={() => changeLanguage('de')}>Switch to DEUTSCH</button>
       <button onClick={() => changeLanguage('en')}>Switch to ENGLISH</button>
