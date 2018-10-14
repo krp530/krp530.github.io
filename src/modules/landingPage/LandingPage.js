@@ -40,7 +40,7 @@ class LandingPage extends React.Component {
     super(props);
 
     this.state = {
-      welcome: welcomes[1],
+      welcome: welcomes[0],
       questions: [qData[0]],
       top: 0,
     }
@@ -134,28 +134,32 @@ class LandingPage extends React.Component {
             ))
           }
 
-          <Grid container spacing={16} className={classes.options}>
-            <Grid item xs={6}>
-              <Button variant="contained" color="primary" fullWidth>Technology</Button>
-            </Grid>
-            <Grid item xs={6}>
-              <Button variant="contained" color="primary" fullWidth>Medical</Button>
-            </Grid>
+          <Page>
+            <Typography align="center" paragraph variant="h4">{t('categoriesTitle')}</Typography>
+            <Grid container spacing={16} className={classes.options}>
+              <Grid item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>Technology</Button>
+              </Grid>
+              <Grid item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>Medical</Button>
+              </Grid>
 
-            <Grid item xs={6}>
-              <Button variant="contained" color="primary" fullWidth>Labor</Button>
-            </Grid>
-            <Grid item xs={6}>
-              <Button variant="contained" color="primary" fullWidth>Creative</Button>
-            </Grid>
+              <Grid item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>Labor</Button>
+              </Grid>
+              <Grid item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>Creative</Button>
+              </Grid>
 
-            <Grid item xs={6}>
-              <Button variant="contained" color="primary" fullWidth>Teaching</Button>
+              <Grid item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>Teaching</Button>
+              </Grid>
+              <Grid item xs={6}>
+                <Button variant="contained" color="primary" fullWidth>Engineering</Button>
+              </Grid>
             </Grid>
-            <Grid item xs={6}>
-              <Button variant="contained" color="primary" fullWidth>Engineering</Button>
-            </Grid>
-          </Grid>
+          </Page>
+
         </div>
         <MapBackground />
       </div>
