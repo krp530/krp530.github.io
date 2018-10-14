@@ -171,11 +171,27 @@ class JobDetail extends React.Component {
               {
                 short &&
                 <Grid item xs={6}>
-                  <Button onClick={this.toggleDesc} fullWidth className={classes.readMore}>Read More <span className={classes.plus}>+</span></Button>
+                  <Button
+                    onClick={this.toggleDesc}
+                    fullWidth
+                    className={classes.readMore}
+                  >
+                    {t('readMore')}
+                    <span className={classes.plus}>+</span>
+                  </Button>
                 </Grid>
               }
               <Grid item xs={6}>
-                <Button fullWidth component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">Find Jobs</Button>
+                <Button
+                  fullWidth
+                  component="a"
+                  href={this.job.listings}
+                  target="_blank"
+                  color="primary"
+                  variant="contained"
+                >
+                  {t('findJobs')}
+                </Button>
               </Grid>
             </Grid>
 
