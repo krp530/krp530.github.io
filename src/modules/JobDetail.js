@@ -222,7 +222,7 @@ class JobDetail extends React.Component {
           {console.log(this.getNextJobs())}
           {
             _map(this.getNextJobs(), (job, i) => (
-              <Link key={job.id} className={classes.link} to={`/${category}/${job.id}`}>- {t(`${job.id}.title`)}</Link>
+              <a key={job.id} className={classes.link} href={`/${category}/${job.id}`}>- {t(`${job.id}.title`)}</a>
             ))
           }
         </Page>
