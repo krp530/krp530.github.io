@@ -121,9 +121,16 @@ class JobDetail extends React.Component {
   getNextJobs() {
     const { match } = this.props;
     const { category, id } = match.params;
-    const availableJobs = _filter(data, { category });
 
-    return _groupBy(availableJobs, 'level');
+    switch(this.job.level) {
+      case 'entry': {
+        return _filter(data, { level: 'intermediate' })
+      }
+      case 'intermediate': {
+        return _filter(data, { level: 'senior' })
+      }
+      default: return []
+    }
   }
 
   getNextLevel() {
@@ -212,7 +219,12 @@ class JobDetail extends React.Component {
                 <Typography variant="title">{t(this.getNextLevel())}</Typography>          
             </div>
           }
-          <Button component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">{t('findJobs')}</Button>
+          {console.log(this.getNextJobs())}
+          {
+            _map(this.getNextJobs(), (job, i) => (
+              <Link key={job.id} className={classes.link} to={`/${category}/${job.id}`}>- {t(`${job.id}.title`)}</Link>
+            ))
+          }
         </Page>
       </div>
     )
