@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 'id1',
-    category: 'Receptionist',
+    category: 'receptionist',
     level: 'Entry',
     question1: false,
     question2: false,
@@ -10,7 +10,7 @@ export const data = [
   },
   {
     id: 'id2',
-    category: 'Office Clerk',
+    category: 'office clerk',
     level: 'Entry',
     question1: false,
     question2: false,
@@ -19,7 +19,7 @@ export const data = [
   },
   {
     id: 'id3',
-    category: 'Sales Assistant',
+    category: 'sales assistant',
     level: 'Intermediate',
     question1: false,
     question2: false,
@@ -28,7 +28,7 @@ export const data = [
   },
   {
     id: 'id4',
-    category: 'Administrative Assistant',
+    category: 'administrative assistant',
     level: 'Intermediate',
     question1: false,
     question2: false,
@@ -37,7 +37,7 @@ export const data = [
   },
   {
     id: 'id5',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Entry',
     question1: false,
     question2: false,
@@ -46,7 +46,7 @@ export const data = [
   },
   {
     id: 'id6',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Intermediate',
     question1: false,
     question2: false,
@@ -55,7 +55,7 @@ export const data = [
   },
   {
     id: 'id7',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Intermediate',
     question1: false,
     question2: false,
@@ -64,7 +64,7 @@ export const data = [
   },
   {
     id: 'id8',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Senior',
     question1: false,
     question2: false,
@@ -73,7 +73,7 @@ export const data = [
   },
   {
     id: 'id9',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Senior',
     question1: false,
     question2: false,
@@ -82,7 +82,7 @@ export const data = [
   },
   {
     id: 'id10',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Senior',
     question1: false,
     question2: false,
@@ -91,7 +91,7 @@ export const data = [
   },
   {
     id: 'id11',
-    category: 'Healthcare',
+    category: 'healthcare',
     level: 'Senior',
     question1: false,
     question2: false,

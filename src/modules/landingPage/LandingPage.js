@@ -143,12 +143,12 @@ class LandingPage extends React.Component {
               <Grid item xs={6}>
                 <Button
                   component={Link}
-                  to="/technology"
+                  to="/healthcare"
                   variant="contained"
                   color="primary"
                   fullWidth
                 >
-                  Technology
+                  Healthcare
                 </Button>
               </Grid>
               <Grid item xs={6}>
