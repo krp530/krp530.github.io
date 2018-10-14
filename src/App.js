@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 // import Counter from './containers/Counter';
 // import Todo from './containers/Todo';
 // import Home from './containers/Home';
-import Category from './modules/Category';
+import JobListing from './modules/JobListing';
 import Reference from './modules/reference/Reference';
 import LandingPage from './modules/landingPage/LandingPage';
 import AppBar from './modules/AppBar';
@@ -42,7 +42,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          <Route exact path="/:category" component={Category} />
+          <Route exact path="/:category" component={JobListing} />
         </Switch>
 
         {/* <header className="App-header">
