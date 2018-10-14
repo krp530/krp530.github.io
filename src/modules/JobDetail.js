@@ -21,7 +21,7 @@ const styles = (theme) => ({
     maxWidth: 480,
     margin: '0 auto',
   },
-  level: {
+  section: {
     borderLeft: `1px solid ${theme.palette.grey[300]}`,
     paddingLeft: theme.spacing.unit * 3,
     position: 'relative',
@@ -66,42 +66,77 @@ class JobDetail extends React.Component {
 
     this.state = {
     }
-    
+
+    this.job = _find(data, {id: this.props.match.params.id}) || {};
+
     this.getNextJobs = this.getNextJobs.bind(this);
+    this.getNextLevel = this.getNextLevel.bind(this);
+    this.getShortDesc = this.getShortDesc.bind(this);
   }
 
   getNextJobs() {
     const { match } = this.props;
-    const { category } = match.params;
+    const { category, id } = match.params;
     const availableJobs = _filter(data, { category });
 
     return _groupBy(availableJobs, 'level');
   }
 
+  getNextLevel() {
+    const currentLevel = this.job.level;
+
+    switch(currentLevel) {
+      case 'Entry': {
+        return 'Intermediate';
+      }
+      case 'Intermediate': {
+        return 'Senior';
+      }
+      default: return;
+    }
+  }
+
+  getShortDesc() {
+    const { t } = this.props;
+    const fullDesc = t(`${this.job.id}.description`);
+    const shortDesc = fullDesc.substring(0, 150);
+
+    if (fullDesc.length + 4 === shortDesc.length) {
+      return fullDesc;
+    }
+
+    return shortDesc + '...';
+  }
+
   render() {
     const { classes, match, t } = this.props;
-    const { category } = match.params;
+    const { category, id } = match.params;
 
     return (
       <div className={classes.root}>
         <Page>
+          <div className={classes.section}>
+            <div className={classes.dot}></div>
+            <Typography variant="title">{t(`${id}.title`)}</Typography>
+            <Typography variant="body2">{this.getShortDesc()}</Typography>
+            <Button>Read More</Button>
+          </div>
           {
-            _map(this.getNextJobs(), (job, level) => (
-              <div key={level} className={classes.level}>
+            this.getNextJobs() && <div className={classes.section}>
                 <div className={classes.dot}></div>
-                <Typography className={classes.title} variant="title">{level} Level</Typography>
-                {
-                  _map(job, (_job, id) => (
-                    <Link className={classes.link} to={`/${category}/${_job.id}`} key={_job.id}>- {t(`${_job.id}.title`)}</Link>
-                  ))
-                }
-              </div>
-            ))
+                <Typography variant="title">{t(`${id}.title`)}</Typography>          
+            </div>
           }
+          <Button component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">Find Jobs</Button>
         </Page>
       </div>
     )
   }
 }
+
+// title
+// description
+// education
+// requirements
 
 export default withStyles(styles)(withNamespaces('translation')(JobDetail))
