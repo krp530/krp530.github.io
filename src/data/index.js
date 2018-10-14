@@ -110,7 +110,3 @@ export const data = [
     listings: 'https://www.indeed.com/q-oral-surgeon-jobs.html'
   },
 ]
-
-export const getCategories = (question1, question2, question3) => {
-
-}
