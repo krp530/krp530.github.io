@@ -146,7 +146,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Technology
+                  {t('technology')}
                 </Button>
               </Grid>
               <Grid item xs={6}>
@@ -157,7 +157,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Medical
+                  {t('medical')}
                 </Button>
               </Grid>
 
@@ -169,7 +169,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Labor
+                  {t('labor')}
                 </Button>
               </Grid>
               <Grid item xs={6}>
@@ -180,7 +180,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Creative
+                  {t('creative')}
                 </Button>
               </Grid>
 
@@ -192,7 +192,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Teaching
+                  {t('teaching')}
                 </Button>
               </Grid>
               <Grid item xs={6}>
@@ -203,7 +203,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Engineering
+                  {t('engineering')}
                 </Button>
               </Grid>
             </Grid>

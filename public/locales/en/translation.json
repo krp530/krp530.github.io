@@ -6,6 +6,12 @@
   "q2": "Do you like being creative?",
   "q3": "Do you love technology?",
   "categoriesTitle": "Suggestions",
+  "technology": "Technology",
+  "medical": "Medical",
+  "labor": "Labor",
+  "creative": "Creative",
+  "teaching": "Teaching",
+  "engineering": "Engineering",
   "id1": {
     "title": "Receptionist",
     "description": ""

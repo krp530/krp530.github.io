@@ -6,6 +6,12 @@
   "q2":"Aimez-vous être créatif?",
   "q3":"Aimez-vous la technologie?",
   "categoriesTitle": "Suggestions",
+  "technology": "La technologie",
+  "medical": "Médical",
+  "labor": "La main d'oeuvre",
+  "creative": "Créatif",
+  "teaching": "Enseignement",
+  "engineering": "Ingénierie",
   "id1": {
     "title": "Réceptionniste",
     "description": ""
