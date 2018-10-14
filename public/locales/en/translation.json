@@ -2,7 +2,73 @@
   "title": "Welcome to React using react-i18next",
   "description": {
     "part1": "This one has <1>special rich-text formatting</1> in the translation file!",
-    "part2": "Switch language between english and german using buttons above."
+    "part2": "Switch language between english and german using buttons above.",
+  },
+  "langselect":"Please Select Your Language",
+  "id1": {
+    "title": "receptionist",
+    "description": ""
+  },
+  "id2": {
+    "title": "office clerk",
+    "description": ""
+  },
+  "id3": {
+    "title": "sales assistant",
+    "description": ""
+  },
+  "id4": {
+    "title": "administrative assistant",
+    "description": ""
+  },
+  "id5": {
+    "title": "dental assistant",
+    "description": "Dental assistants help dentists with various tasks like sterilizing instruments and equipment, taking and developing dental x-rays, taking impressions of patients’ teeth, and scheduling appointments. Furthermore, they prepare and guide patients throughout their procedures.",
+    "education": "In most states, what you have to do to be a dental assistant or Registered Dental Assistant is to graduate from an accredited program. In other states, there are no formal educational requirements.",
+    "requirements": "Pass the appropriate state exam.",
+    "next step": "id6"
+  },
+  "id6": {
+    "title": "dental hygienist",
+    "description": "The duties of a dental hygienist include cleaning teeth, examining patients for signs of oral diseases like gingivitis, and provide other preventative dental care under the supervision of a dentist. Moreover, they also educate patients on ways to improve and maintain good oral health.",
+    "education": "Dental hygienists typically need an associate degree in dental hygiene.",
+    "requirements": "While all states require dental hygienists to be licensed, requirements vary by state.",
+    "career progress": ""
+  },
+  "id7": {
+    "title": "dental laboratory technician",
+    "description": "Dental technicians manufacture dental prosthetics, such as bridges, crowns and dentures according to the specification sent by the dentist.",
+    "education": "No specific educational requirement, many learn their skills on the job, aspiring professionals may also receive training from community colleges or vocational-technical schools.",
+    "requirements": "",
+    "career progress": ""
+  },
+  "id8": {
+    "title": "general dentist",
+    "description": "The general dentist usually performs dental and oral health care prevention and maintenance services like teeth cleaning, fluoride treatments, cavity fillings and root canals. In some instances, the general dentist may also treat diseases of nerve, pulp and other dental tissues affecting oral hygiene and retention of teeth.",
+    "education": "Complete dental school",
+    "requirements": "Obtain a license",
+    "career progress": ""
+  },
+  "id9": {
+    "title": "orthodontist",
+    "description": "Orthodontists specialize on jaw alignment and positioning of the teeth. They use different methods and oral appliances to straighten and realign crooked or misaligned teeth. Braces, retainers and other devices are used to help correct patient’s teeth.",
+    "education": "An orthodontist has to complete dental school and go through two or three years of advanced specialty education.",
+    "requirements": "",
+    "career progress": ""
+  },
+  "id10": {
+    "title": "periodontist",
+    "description": "A periodontist is a dentist who specializes in the care of the supporting structures of teeth that are known as periodontium, such as gums, the alveolar bone and periodontal ligament. Periontal diseases are usually a result of bacterial accumulation and inflammation.",
+    "education": "To become a periodontist, one has to complete dental school and obtain a postdoctoral certificate (three years or more).",
+    "requirements": "",
+    "career progress": ""
+  },
+  "id11": {
+    "title": "oral and maxillofacial surgeon",
+    "description": "An oral and maxillofacial surgeon provides surgical care for teeth, jaws and facial bones. Some surgeons also specialize in microvascular reconstruction (after neck and head cancer), craniofacial surgery and pediatric maxillofacial surgery (e.g., cleft lip and palate repair) or cranio-maxillofacial trauma treatment.",
+    "education": "To become an oral and maxillofacial surgeon, one has to complete a minimum of four years in a hospital-based residency program upon graduation from dental school.",
+    "requirements": "",
+    "career progress": ""
   },
   "langselect":"Please Select Your Language",
   "start": "Begin Your Journy",
