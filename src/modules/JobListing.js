@@ -66,7 +66,7 @@ class JobListing extends React.Component {
 
     this.state = {
     }
-    
+
     this.getJobs = this.getJobs.bind(this);
   }
 
@@ -89,7 +89,7 @@ class JobListing extends React.Component {
             _map(this.getJobs(), (job, level) => (
               <div key={level} className={classes.level}>
                 <div className={classes.dot}></div>
-                <Typography className={classes.title} variant="title">{level} Level</Typography>
+                <Typography className={classes.title} variant="title">{t(`${level}Level`)}</Typography>
                 {
                   _map(job, (_job, id) => (
                     <Link className={classes.link} to={`/${category}/${_job.id}`} key={_job.id}>- {t(`${_job.id}.title`)}</Link>

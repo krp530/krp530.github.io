@@ -12,6 +12,9 @@
   "creative": "Créatif",
   "teaching": "Enseignement",
   "engineering": "Ingénierie",
+  "entryLevel": "Niveau d'entrée",
+  "intermediateLevel": "Niveau intermédiaire",
+  "seniorLevel": "Niveau supérieur",
   "id1": {
     "title": "Réceptionniste",
     "description": ""

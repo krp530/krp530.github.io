@@ -12,6 +12,9 @@
   "creative": "Creative",
   "teaching": "Teaching",
   "engineering": "Engineering",
+  "entryLevel": "Entry Level",
+  "intermediateLevel": "Intermediate Level",
+  "seniorLevel": "Senior Level",
   "id1": {
     "title": "Receptionist",
     "description": ""

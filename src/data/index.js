@@ -2,7 +2,7 @@ export const data = [
   {
     id: 'id1',
     category: 'receptionist',
-    level: 'Entry',
+    level: 'entry',
     question1: false,
     question2: false,
     question3: false,
@@ -11,7 +11,7 @@ export const data = [
   {
     id: 'id2',
     category: 'office clerk',
-    level: 'Entry',
+    level: 'entry',
     question1: false,
     question2: false,
     question3: false,
@@ -20,7 +20,7 @@ export const data = [
   {
     id: 'id3',
     category: 'sales assistant',
-    level: 'Intermediate',
+    level: 'intermediate',
     question1: false,
     question2: false,
     question3: false,
@@ -29,7 +29,7 @@ export const data = [
   {
     id: 'id4',
     category: 'administrative assistant',
-    level: 'Intermediate',
+    level: 'intermediate',
     question1: false,
     question2: false,
     question3: false,
@@ -38,7 +38,7 @@ export const data = [
   {
     id: 'id5',
     category: 'healthcare',
-    level: 'Entry',
+    level: 'entry',
     question1: false,
     question2: false,
     question3: true,
@@ -47,7 +47,7 @@ export const data = [
   {
     id: 'id6',
     category: 'healthcare',
-    level: 'Intermediate',
+    level: 'intermediate',
     question1: false,
     question2: false,
     question3: true,
@@ -56,7 +56,7 @@ export const data = [
   {
     id: 'id7',
     category: 'healthcare',
-    level: 'Intermediate',
+    level: 'intermediate',
     question1: false,
     question2: false,
     question3: true,
@@ -65,7 +65,7 @@ export const data = [
   {
     id: 'id8',
     category: 'healthcare',
-    level: 'Senior',
+    level: 'senior',
     question1: false,
     question2: false,
     question3: true,
@@ -74,7 +74,7 @@ export const data = [
   {
     id: 'id9',
     category: 'healthcare',
-    level: 'Senior',
+    level: 'senior',
     question1: false,
     question2: false,
     question3: true,
@@ -83,7 +83,7 @@ export const data = [
   {
     id: 'id10',
     category: 'healthcare',
-    level: 'Senior',
+    level: 'senior',
     question1: false,
     question2: false,
     question3: true,
@@ -92,7 +92,7 @@ export const data = [
   {
     id: 'id11',
     category: 'healthcare',
-    level: 'Senior',
+    level: 'senior',
     question1: false,
     question2: false,
     question3: true,

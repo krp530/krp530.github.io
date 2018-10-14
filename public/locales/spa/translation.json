@@ -12,6 +12,9 @@
   "creative": "Creativo",
   "teaching": "Enseñando",
   "engineering": "Ingenieria",
+  "entryLevel": "Nivel de entrada",
+  "intermediateLevel": "Nivel intermedio",
+  "seniorLevel": "Nivel superior",
   "id1": {
     "title": "recepcionista",
     "description": ""
