@@ -1,16 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import MaterialAppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import TranslateIcon from '@material-ui/icons/Translate';
+import HomeIcon from '@material-ui/icons/Home';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Typography from '@material-ui/core/Typography';
 import _map from 'lodash/map';
 import { languages } from '../data/languages';
 
 const styles = (theme) => ({
-
+  home: {
+    marginLeft: -12,
+    marginRight: 20,
+  },
+  toolbar: {
+    color: 'white',
+  },
+  translate: {
+    marginLeft: 'auto',
+  },
 })
 
 class AppBar extends React.Component {
@@ -53,8 +65,12 @@ class AppBar extends React.Component {
     return (
       <React.Fragment>
         <MaterialAppBar>
-          <Toolbar>
-            <IconButton onClick={this.openMenu}>
+          <Toolbar className={classes.toolbar}>
+            <IconButton className={classes.home} color="inherit" component={Link} to="/">
+              <HomeIcon />
+            </IconButton>
+            <Typography color="inherit" variant='h6'>App Name</Typography>
+            <IconButton color="inherit" className={classes.translate} onClick={this.openMenu}>
               <TranslateIcon />
             </IconButton>
           </Toolbar>

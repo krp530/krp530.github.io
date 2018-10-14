@@ -4,5 +4,9 @@
     "part1": "This one has <1>special rich-text formatting</1> in the translation file!",
     "part2": "Switch language between english and german using buttons above."
   },
-  "langselect":"Please Select Your Language"
+  "langselect":"Please Select Your Language",
+  "start": "Begin Your Journy",
+  "q1": "Do want to work with your hands?",
+  "q2": "Do you like being creative?",
+  "q3": "Do you love technology?"
 }

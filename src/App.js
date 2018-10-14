@@ -39,13 +39,12 @@ class App extends Component {
     return (
       <div className={classes.root}>
         <AppBar position="static" changeLanguage={this.changeLanguage} />
-        <Trans i18nKey="description.part1">
-          This one has <b>special rich-text formatting</b> in the translation file!
-        </Trans>
 
         <Switch>
           <Route exact path="/" render={() => <LandingPage />} />
+          <Route exact path="/question" render={() => <Question question="Are you more creative or mechanical?" />} />
           <Route exact path="/step1" render={() => <Question question="Are you more creative or mechanical?" />} />
+          {/*<Route exact path="/altHome" render={() => <LandingPageAlt />} />*/}
         </Switch>
 
         {/* <header className="App-header">
