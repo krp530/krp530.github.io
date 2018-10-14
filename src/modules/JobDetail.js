@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import SchoolIcon from '@material-ui/icons/School';
 import _find from 'lodash/find';
 import _map from 'lodash/map';
 import _concat from 'lodash/concat';
@@ -57,7 +58,42 @@ const styles = (theme) => ({
     margin: 0,
     padding: 0,
     paddingBottom: theme.spacing.unit,
+    color: theme.palette.primary.main,
   },
+  readMore: {
+    color: theme.palette.primary.main,
+  },
+  plus: {
+    fontSize: 18,
+    paddingBottom: theme.spacing.unit / 2,
+    paddingLeft: theme.spacing.unit / 4,
+    display: 'inline-block',
+  },
+  education: {
+    background: theme.palette.grey[100],
+    marginTop: theme.spacing.unit * 3,
+    marginLeft: -theme.spacing.unit * 4.5,
+    paddingLeft: theme.spacing.unit * 4.5,
+    zIndex: -1,
+    position: 'relative',
+  },
+  educationTitle: {
+    color: theme.palette.primary.main,
+    fontSize: 32,
+    fontFamily: theme.typography.fontFamily,
+    display: 'flex',
+    alignContent: 'center',
+  },
+  ed: {
+    display: 'inline-block',
+  },
+  educationIcon: {
+    paddingRight: theme.spacing.unit * 2,
+    paddingLeft: theme.spacing.unit,
+    width: 48,
+    height: 48,
+
+  }
 })
 
 class JobDetail extends React.Component {
@@ -65,13 +101,21 @@ class JobDetail extends React.Component {
     super(props);
 
     this.state = {
+      short: true,
     }
 
     this.job = _find(data, {id: this.props.match.params.id}) || {};
 
     this.getNextJobs = this.getNextJobs.bind(this);
     this.getNextLevel = this.getNextLevel.bind(this);
-    this.getShortDesc = this.getShortDesc.bind(this);
+    this.getDesc = this.getDesc.bind(this);
+    this.toggleDesc = this.toggleDesc.bind(this);
+  }
+
+  toggleDesc() {
+    this.setState({
+      short: !this.state.short,
+    });
   }
 
   getNextJobs() {
@@ -85,23 +129,26 @@ class JobDetail extends React.Component {
   getNextLevel() {
     const currentLevel = this.job.level;
 
+    console.log(currentLevel)
+
     switch(currentLevel) {
-      case 'Entry': {
-        return 'Intermediate';
+      case 'entry': {
+        return 'nextIntermediate';
       }
-      case 'Intermediate': {
-        return 'Senior';
+      case 'intermediate': {
+        return 'nextSenior';
       }
       default: return;
     }
   }
 
-  getShortDesc() {
+  getDesc() {
     const { t } = this.props;
+    const { short } = this.state;
     const fullDesc = t(`${this.job.id}.description`);
     const shortDesc = fullDesc.substring(0, 150);
 
-    if (fullDesc.length + 4 === shortDesc.length) {
+    if (!short || fullDesc.length + 4 === shortDesc.length) {
       return fullDesc;
     }
 
@@ -109,6 +156,7 @@ class JobDetail extends React.Component {
   }
 
   render() {
+    const { short } = this.state;
     const { classes, match, t } = this.props;
     const { category, id } = match.params;
 
@@ -117,14 +165,35 @@ class JobDetail extends React.Component {
         <Page>
           <div className={classes.section}>
             <div className={classes.dot}></div>
-            <Typography variant="title">{t(`${id}.title`)}</Typography>
-            <Typography variant="body2">{this.getShortDesc()}</Typography>
-            <Button>{t('readMore')}</Button>
+            <Typography className={classes.title} variant="title">{t(`${id}.title`)}</Typography>
+            <Typography variant="body2" paragraph>{this.getDesc()}</Typography>
+            <Grid container>
+              {
+                short &&
+                <Grid item xs={6}>
+                  <Button onClick={this.toggleDesc} fullWidth className={classes.readMore}>Read More <span className={classes.plus}>+</span></Button>
+                </Grid>
+              }
+              <Grid item xs={6}>
+                <Button fullWidth component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">Find Jobs</Button>
+              </Grid>
+            </Grid>
+
+            <div className={classes.education}>
+              <div className={classes.educationTitle}>
+                <SchoolIcon className={classes.educationIcon} />
+                <span className={classes.ed}>{t('education')}</span>
+              </div>
+              <Typography variant="body2" paragraph>
+                {t(`${this.job.id}.education`)}
+              </Typography>
+            </div>
           </div>
           {
             this.getNextJobs() && <div className={classes.section}>
                 <div className={classes.dot}></div>
                 <Typography variant="title">{t(`${id}.title`)}</Typography>
+                <Typography variant="title">{t(this.getNextLevel())}</Typography>          
             </div>
           }
           <Button component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">{t('findJobs')}</Button>
