@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 // import Counter from './containers/Counter';
 // import Todo from './containers/Todo';
 // import Home from './containers/Home';
-import Question from './modules/Question';
+import Category from './modules/Category';
 import Reference from './modules/reference/Reference';
 import LandingPage from './modules/landingPage/LandingPage';
 import AppBar from './modules/AppBar';
@@ -41,10 +41,8 @@ class App extends Component {
         <AppBar position="static" changeLanguage={this.changeLanguage} />
 
         <Switch>
-          <Route exact path="/" render={() => <LandingPage />} />
-          <Route exact path="/question" render={() => <Question question="Are you more creative or mechanical?" />} />
-          <Route exact path="/step1" render={() => <Question question="Are you more creative or mechanical?" />} />
-          {/*<Route exact path="/altHome" render={() => <LandingPageAlt />} />*/}
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/:category" component={Category} />
         </Switch>
 
         {/* <header className="App-header">

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import MaterialAppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -66,7 +65,7 @@ class AppBar extends React.Component {
       <React.Fragment>
         <MaterialAppBar>
           <Toolbar className={classes.toolbar}>
-            <IconButton className={classes.home} color="inherit" component={Link} to="/">
+            <IconButton className={classes.home} color="inherit" component='a' href="/">
               <HomeIcon />
             </IconButton>
             <Typography color="inherit" variant='h6'>App Name</Typography>
