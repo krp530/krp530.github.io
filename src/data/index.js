@@ -6,7 +6,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: false,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: ''
   },
   {
     id: 'id2',
@@ -15,7 +16,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: false,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: ''
   },
   {
     id: 'id3',
@@ -24,7 +26,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: false,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: ''
   },
   {
     id: 'id4',
@@ -33,7 +36,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: false,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: ''
   },
   {
     id: 'id5',
@@ -42,7 +46,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id6']
+    nextSteps: ['id6'],
+    listings: 'https://www.indeed.com/q-dental-assistant-jobs.html'
   },
   {
     id: 'id6',
@@ -51,7 +56,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id7']
+    nextSteps: ['id7'],
+    listings: 'https://www.indeed.com/q-dental-hygienist-jobs.html'
   },
   {
     id: 'id7',
@@ -60,7 +66,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id8']
+    nextSteps: ['id8'],
+    listings: 'https://www.indeed.com/q-dental-technician-jobs.html'
   },
   {
     id: 'id8',
@@ -69,7 +76,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id9', 'id10', 'id11']
+    nextSteps: ['id9', 'id10', 'id11'],
+    listings: 'https://www.indeed.com/q-dentist-jobs.html'
   },
   {
     id: 'id9',
@@ -78,7 +86,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: 'https://www.indeed.com/q-orthodontist-jobs.html'
   },
   {
     id: 'id10',
@@ -87,7 +96,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: 'https://www.indeed.com/q-periodontist-jobs.html'
   },
   {
     id: 'id11',
@@ -96,7 +106,8 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id']
+    nextSteps: ['id'],
+    listings: 'https://www.indeed.com/q-oral-surgeon-jobs.html'
   },
 ]
 
