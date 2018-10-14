@@ -1,16 +1,11 @@
 {
-  "title": "Welcome to React using react-i18next",
-  "langselect":"Please Select Your Language",
-  "start": "Begin Your Journy",
+  "title": "Care Bayer Project",
+  "start": "Begin Your Journey",
+  "tagline": "Finding the Right job",
   "q1": "Do want to work with your hands?",
   "q2": "Do you like being creative?",
   "q3": "Do you love technology?",
   "categoriesTitle": "Suggestions",
-  "description": {
-    "part1": "This one has <1>special rich-text formatting</1> in the translation file!",
-    "part2": "Switch language between english and german using buttons above."
-  },
-  "langselect":"Please Select Your Language",
   "id1": {
     "title": "Receptionist",
     "description": ""

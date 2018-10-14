@@ -70,7 +70,7 @@ class LandingPage extends React.Component {
       const { questions } = this.state;
       const question = _find(qData, { question: answer ? _question.yes : _question.no });
       const length = questions.length;
-      
+
       questions[length - 1].answer = answer;
 
       this.movePage('up')();
@@ -110,7 +110,7 @@ class LandingPage extends React.Component {
           <Page>
             <div className={classes.titleContainer}>
               <Typography variant="h3">{welcome}</Typography>
-              <Typography variant="h6">{t('Finding the Right Job')}</Typography>
+              <Typography variant="h6">{t('tagline')}</Typography>
             </div>
 
             <Button
@@ -122,7 +122,7 @@ class LandingPage extends React.Component {
               {t('start')}
             </Button>
           </Page>
-          
+
           {
             _map(questions, (question) => (
               <Page key={question.question} style={{ padding: 0 }}>

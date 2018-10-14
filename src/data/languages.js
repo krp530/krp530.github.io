@@ -5,7 +5,7 @@ export const languages = [
   },
   {
     label: 'Español',
-    value: 'es',
+    value: 'spa',
   },
   {
     label: 'Français',
