@@ -215,8 +215,7 @@ class JobDetail extends React.Component {
           {
             this.getNextJobs() && <div className={classes.section}>
                 <div className={classes.dot}></div>
-                <Typography variant="title">{t(`${id}.title`)}</Typography>
-                <Typography variant="title">{t(this.getNextLevel())}</Typography>          
+                <Typography variant="title">{t(this.getNextLevel())}</Typography>
             </div>
           }
           {console.log(this.getNextJobs())}

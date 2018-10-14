@@ -1,44 +1,44 @@
 export const data = [
-  {
-    id: 'id1',
-    category: 'receptionist',
-    level: 'entry',
-    question1: false,
-    question2: false,
-    question3: false,
-    nextSteps: ['id'],
-    listings: ''
-  },
-  {
-    id: 'id2',
-    category: 'office clerk',
-    level: 'entry',
-    question1: false,
-    question2: false,
-    question3: false,
-    nextSteps: ['id'],
-    listings: ''
-  },
-  {
-    id: 'id3',
-    category: 'sales assistant',
-    level: 'intermediate',
-    question1: false,
-    question2: false,
-    question3: false,
-    nextSteps: ['id'],
-    listings: ''
-  },
-  {
-    id: 'id4',
-    category: 'administrative assistant',
-    level: 'intermediate',
-    question1: false,
-    question2: false,
-    question3: false,
-    nextSteps: ['id'],
-    listings: ''
-  },
+  // {
+  //   id: 'id1',
+  //   category: 'receptionist',
+  //   level: 'entry',
+  //   question1: false,
+  //   question2: false,
+  //   question3: false,
+  //   nextSteps: [],
+  //   listings: ''
+  // },
+  // {
+  //   id: 'id2',
+  //   category: 'office clerk',
+  //   level: 'entry',
+  //   question1: false,
+  //   question2: false,
+  //   question3: false,
+  //   nextSteps: [],
+  //   listings: ''
+  // },
+  // {
+  //   id: 'id3',
+  //   category: 'sales assistant',
+  //   level: 'intermediate',
+  //   question1: false,
+  //   question2: false,
+  //   question3: false,
+  //   nextSteps: [],
+  //   listings: ''
+  // },
+  // {
+  //   id: 'id4',
+  //   category: 'administrative assistant',
+  //   level: 'intermediate',
+  //   question1: false,
+  //   question2: false,
+  //   question3: false,
+  //   nextSteps: [],
+  //   listings: ''
+  // },
   {
     id: 'id5',
     category: 'healthcare',
@@ -86,7 +86,7 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id'],
+    nextSteps: [],
     listings: 'https://www.indeed.com/q-orthodontist-jobs.html'
   },
   {
@@ -96,7 +96,7 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id'],
+    nextSteps: [],
     listings: 'https://www.indeed.com/q-periodontist-jobs.html'
   },
   {
@@ -106,7 +106,7 @@ export const data = [
     question1: false,
     question2: false,
     question3: true,
-    nextSteps: ['id'],
+    nextSteps: [],
     listings: 'https://www.indeed.com/q-oral-surgeon-jobs.html'
   },
 ]

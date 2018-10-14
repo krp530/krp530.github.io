@@ -15,8 +15,9 @@
   "entryLevel": "Entry Level",
   "intermediateLevel": "Intermediate Level",
   "seniorLevel": "Senior Level",
+  "education": "Education",
   "nextIntermediate": "How do I move to an Intermediate level career?",
-  "nextSenion": "How do I move to a Senior level career?",
+  "nextSenior": "How do I move to a Senior level career?",
   "findJobs": "Find Jobs",
   "readMore": "Read More",
   "id1": {
@@ -57,24 +58,24 @@
     "title": "General Dentist",
     "description": "The general dentist usually performs dental and oral health care prevention and maintenance services like teeth cleaning, fluoride treatments, cavity fillings and root canals. In some instances, the general dentist may also treat diseases of nerve, pulp and other dental tissues affecting oral hygiene and retention of teeth.",
     "education": "Complete dental school",
-    "requirements": "Obtain a license"
+    "requirements": "Obtain a license, requirements vary by state."
   },
   "id9": {
     "title": "Orthodontist",
     "description": "Orthodontists specialize on jaw alignment and positioning of the teeth. They use different methods and oral appliances to straighten and realign crooked or misaligned teeth. Braces, retainers and other devices are used to help correct patient’s teeth.",
-    "education": "Two or three years of advanced specialty education.",
-    "requirements": ""
+    "education": "Complete dental school and two or three years of advanced specialty education.",
+    "requirements": "Obtain a license, requirements vary by state."
   },
   "id10": {
     "title": "Periodontist",
     "description": "A periodontist is a dentist who specializes in the care of the supporting structures of teeth that are known as periodontium, such as gums, the alveolar bone and periodontal ligament. Periontal diseases are usually a result of bacterial accumulation and inflammation.",
-    "education": "Obtain a postdoctoral certificate (three years or more).",
-    "requirements": ""
+    "education": "Complete dental school and Obtain a postdoctoral certificate (three years or more).",
+    "requirements": "Obtain a license, requirements vary by state."
   },
   "id11": {
     "title": "Oral and Maxillofacial Surgeon",
     "description": "An oral and maxillofacial surgeon provides surgical care for teeth, jaws and facial bones. Some surgeons also specialize in microvascular reconstruction (after neck and head cancer), craniofacial surgery and pediatric maxillofacial surgery (e.g., cleft lip and palate repair) or cranio-maxillofacial trauma treatment.",
-    "education": "Complete a minimum of four years in a hospital-based residency program.",
-    "requirements": ""
+    "education": "Complete dental school and a minimum of four years in a hospital-based residency program.",
+    "requirements": "Obtain a license, requirements vary by state."
   }
 }
