@@ -119,15 +119,15 @@ class JobDetail extends React.Component {
             <div className={classes.dot}></div>
             <Typography variant="title">{t(`${id}.title`)}</Typography>
             <Typography variant="body2">{this.getShortDesc()}</Typography>
-            <Button>Read More</Button>
+            <Button>{t('readMore')}</Button>
           </div>
           {
             this.getNextJobs() && <div className={classes.section}>
                 <div className={classes.dot}></div>
-                <Typography variant="title">{t(`${id}.title`)}</Typography>          
+                <Typography variant="title">{t(`${id}.title`)}</Typography>
             </div>
           }
-          <Button component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">Find Jobs</Button>
+          <Button component="a" href={this.job.listings} target="_blank" color="primary" variant="contained">{t('findJobs')}</Button>
         </Page>
       </div>
     )
