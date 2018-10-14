@@ -1,10 +1,11 @@
+import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 // import About from './containers/About';
 // import Counter from './containers/Counter';
 // import Todo from './containers/Todo';
 // import Home from './containers/Home';
-import React, { Component } from 'react';
+import Category from './modules/Category';
 import Reference from './modules/reference/Reference';
 import LandingPage from './modules/landingPage/LandingPage';
 import AppBar from './modules/AppBar';
@@ -14,7 +15,8 @@ import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 const styles = (theme) => ({
   root: {
-    paddingTop: theme.spacing.unit * 7
+    paddingTop: theme.spacing.unit * 7,
+    height: '100%',
   },
 })
 
@@ -37,12 +39,10 @@ class App extends Component {
     return (
       <div className={classes.root}>
         <AppBar position="static" changeLanguage={this.changeLanguage} />
-        <Trans i18nKey="description.part1">
-          This one has <b>special rich-text formatting</b> in the translation file!
-        </Trans>
 
         <Switch>
-          <Route exact path="/" render={() => <LandingPage />} />
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/:category" component={Category} />
         </Switch>
 
         {/* <header className="App-header">
