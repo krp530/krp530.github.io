@@ -20,7 +20,7 @@ const Home = props => {
       <br/>
       <br/>
       <button onClick={() => changeLanguage('fr')}>Switch to FRENCH</button>
-      <button onClick={() => changeLanguage('de')}>Switch to DEUTSCH</button>
+      <button onClick={() => changeLanguage('es')}>Switch to SPANISH</button>
       <button onClick={() => changeLanguage('en')}>Switch to ENGLISH</button>
     </div>
   )

@@ -10,6 +10,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Typography from '@material-ui/core/Typography';
 import _map from 'lodash/map';
 import { languages } from '../data/languages';
+import { withNamespaces } from 'react-i18next';
 
 const styles = (theme) => ({
   root: {
@@ -63,9 +64,9 @@ class AppBar extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, t } = this.props;
     const { anchorEl } = this.state;
-    
+
     return (
       <React.Fragment>
         <MaterialAppBar className={classes.root}>
@@ -73,7 +74,7 @@ class AppBar extends React.Component {
             <IconButton className={classes.home} color="inherit" component='a' href="/">
               <HomeIcon />
             </IconButton>
-            <Typography color="inherit" variant='h6'>App Name</Typography>
+            <Typography color="inherit" variant='h6'>{t('title')}</Typography>
             <IconButton color="inherit" className={classes.translate} onClick={this.openMenu}>
               <TranslateIcon />
             </IconButton>
@@ -97,4 +98,4 @@ class AppBar extends React.Component {
   }
 }
 
-export default withStyles(styles)(AppBar);
+export default withStyles(styles)(withNamespaces('translation')(AppBar));

@@ -72,7 +72,7 @@ class LandingPage extends React.Component {
       const { questions } = this.state;
       const question = _find(qData, { question: answer ? _question.yes : _question.no });
       const length = questions.length;
-      
+
       questions[length - 1].answer = answer;
 
       this.movePage('up')();
@@ -112,7 +112,7 @@ class LandingPage extends React.Component {
           <Page>
             <div className={classes.titleContainer}>
               <Typography variant="h3">{welcome}</Typography>
-              <Typography variant="h6">{t('Finding the Right Job')}</Typography>
+              <Typography variant="h6">{t('tagline')}</Typography>
             </div>
 
             <Button
@@ -124,7 +124,7 @@ class LandingPage extends React.Component {
               {t('start')}
             </Button>
           </Page>
-          
+
           {
             _map(questions, (question) => (
               <Page key={question.question} style={{ padding: 0 }}>
@@ -148,7 +148,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Healthcare
+                  {t('technology')}
                 </Button>
               </Grid>
               <Grid item xs={6}>
@@ -159,7 +159,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Medical
+                  {t('medical')}
                 </Button>
               </Grid>
 
@@ -171,7 +171,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Labor
+                  {t('labor')}
                 </Button>
               </Grid>
               <Grid item xs={6}>
@@ -182,7 +182,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Creative
+                  {t('creative')}
                 </Button>
               </Grid>
 
@@ -194,7 +194,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Teaching
+                  {t('teaching')}
                 </Button>
               </Grid>
               <Grid item xs={6}>
@@ -205,7 +205,7 @@ class LandingPage extends React.Component {
                   color="primary"
                   fullWidth
                 >
-                  Engineering
+                  {t('engineering')}
                 </Button>
               </Grid>
             </Grid>
