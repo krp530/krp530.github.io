@@ -12,12 +12,17 @@ import _map from 'lodash/map';
 import { languages } from '../data/languages';
 
 const styles = (theme) => ({
+  root: {
+  },
   home: {
     marginLeft: -12,
     marginRight: 20,
   },
   toolbar: {
     color: 'white',
+    maxWidth: 480,
+    width: '100%',
+    margin: '0 auto',
   },
   translate: {
     marginLeft: 'auto',
@@ -63,7 +68,7 @@ class AppBar extends React.Component {
     
     return (
       <React.Fragment>
-        <MaterialAppBar>
+        <MaterialAppBar className={classes.root}>
           <Toolbar className={classes.toolbar}>
             <IconButton className={classes.home} color="inherit" component='a' href="/">
               <HomeIcon />

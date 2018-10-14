@@ -24,6 +24,8 @@ const styles = (theme) => ({
     textAlign: 'center',
     maxWidth: 480,
     transition: 'transform .3s ease-in-out',
+    width: '100%',
+    margin: '0 auto',
   },
   start: {
     margin: `${theme.spacing.unit * 4}px auto`,

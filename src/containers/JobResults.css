@@ -20,6 +20,9 @@
   position: relative;
   margin-right: 9px;
 }
+.subStps > span > span > span {
+  color: black;
+}
 .substpbtn{
   display: block!important;
 }
