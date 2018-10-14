@@ -1,0 +1,25 @@
+.stepConeeeeeeeeeeeeect span {
+    height: 120px;
+    float: left;
+    margin-left: -9px;
+}
+.jobStuffStps>div:last-child .stepConeeeeeeeeeeeeect{
+  opacity: 0;
+}
+.subStps > span:nth-child(2) svg{
+  fill: #9e9e9e;
+  color: #9e9e9e!important;
+  display: none;
+}
+.subStps > svg{
+  color: #9e9e9e!important;
+  float: left;
+  margin-left: -12px;
+  padding-right: 8px;
+  left: 17px;
+  position: relative;
+  margin-right: 9px;
+}
+.substpbtn{
+  display: block!important;
+}

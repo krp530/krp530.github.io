@@ -5,16 +5,22 @@ import Typography from '@material-ui/core/Typography';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
+import StepIcon from '@material-ui/core/StepIcon';
 import StepContent from '@material-ui/core/StepContent';
+import StepConnector from '@material-ui/core/StepConnector';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
+import './JobResults.css'
+
 const styles = (theme) => ({
   jobResultsRoot: {
-    marginTop: "30px",
-    backend: "red"
+    marginTop: "30px"
   },
+  subSteps:{
+    marginLeft: "30px"
+  }
 })
 
 const getSteps = (steps) => steps.map((stp)=>stp.title)
@@ -48,52 +54,36 @@ class JobResults extends React.Component {
     const {  classes } = this.props;
     const steps = getSteps(this.props.steps);
     const { activeStep } = this.state;
+    if(steps.length == 0) return <h3>No data was found.</h3>
 
     return (
       <div className={classes.root}>
-        <Stepper activeStep={activeStep} orientation="vertical">
+          <Stepper orientation="vertical" className="jobStuffStps">
           {steps.map((label, index) => {
             return (
-              <Step key={label}>
+              <Step className="subStps" active={false} key={label}>
+                <StepIcon icon="" className="stpIcn"/>
                 <StepLabel>{label}</StepLabel>
-                <StepContent>
-                  {getStepContent(this.props.steps, index).map((lbl)=> <Typography>- {lbl}</Typography>)}
-                  <Typography>{getStepContent(steps, index)}</Typography>
-                  <div className={classes.actionsContainer}>
-                    <div>
-                      <Button
-                        disabled={activeStep === 0}
-                        onClick={this.handleBack}
-                        className={classes.button}
-                      >
-                        Back
-                      </Button>
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={this.handleNext}
-                        className={classes.button}
-                      >
-                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                      </Button>
-                    </div>
-                  </div>
-                </StepContent>
+
+              <StepConnector className="stepConeeeeeeeeeeeeect"/>
+
+                <div className={classes.subSteps}>
+                  {getStepContent(this.props.steps, index).map((lbl)=> <Button color="primary" className="substpbtn">- {lbl}</Button>)}
+                </div>
+
               </Step>
             );
           })}
         </Stepper>
-        {activeStep === steps.length && (
-          <Paper square elevation={0} className={classes.resetContainer}>
-            <Typography>All steps completed - you&quot;re finished</Typography>
-            <Button onClick={this.handleReset} className={classes.button}>
-              Reset
-            </Button>
-          </Paper>
-        )}
+
       </div>
     );
   }
 }
+
+JobResults.propTypes = {
+  steps: PropTypes.array.isRequired
+}
+
 
 export default withStyles(styles)(withNamespaces('translation')(JobResults))
