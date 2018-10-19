@@ -1,0 +1,81 @@
+{
+  "title": "Care Bayer Proyecto",
+  "start": "Comience Su Viaje",
+  "tagline": "Encontrar el trabajo adecuado",
+  "q1": "Quieres trabajar con tus manos?",
+  "q2": "Te gusta ser creativo?",
+  "q3": "Amas la tecnología?",
+  "categoriesTitle": "Sugerencias",
+  "healthcare": "Cuidado de la salud",
+  "technology": "Tecnología",
+  "labor": "Labor",
+  "creative": "Creativo",
+  "teaching": "Enseñando",
+  "engineering": "Ingenieria",
+  "entryLevel": "Nivel de entrada",
+  "intermediateLevel": "Nivel intermedio",
+  "seniorLevel": "Nivel superior",
+  "education": "Educación",
+  "nextIntermediate": "¿Cómo me cambio a una carrera de nivel intermedio?",
+  "nextSenior": "¿Cómo me cambio a una carrera de nivel superior?",
+  "findJobs": "Encontrar trabajos",
+  "readMore": "Lee mas",
+  "id1": {
+    "title": "recepcionista",
+    "description": ""
+  },
+  "id2": {
+    "title": "Empleado de oficina",
+    "description": ""
+  },
+  "id3": {
+    "title": "Asistente de ventas",
+    "description": ""
+  },
+  "id4": {
+    "title": "Asistente Administrativo",
+    "description": ""
+  },
+  "id5": {
+    "title": "Asistente Dental",
+    "description": "Los asistentes dentales ayudan a los dentistas con diversas tareas, como esterilizar instrumentos y equipos, tomar y desarrollar radiografías dentales, tomar impresiones de los dientes de los pacientes y programar citas. Además, preparan y guían a los pacientes a lo largo de sus procedimientos.",
+    "education": "En la mayoría de los estados, lo que debe hacer para ser un asistente dental o un asistente dental registrado es graduarse de un programa acreditado. En otros estados, no hay requirements educativos formales.",
+    "requirements": "Aprobar el examen estatal correspondiente."
+  },
+  "id6": {
+    "title": "Higienista Dental",
+    "description": "Los deberes de un higienista dental incluyen limpiar los dientes, examinar a los pacientes para detectar signos de enfermedades orales como la gingivitis, y brindar otro cuidado dental preventivo bajo la supervisión de un dentista. Además, también educan a los pacientes sobre formas de mejorar y mantener buena salud bucal.",
+    "education": "Obtener un grado asociado en higiene dental.",
+    "requirements": "Obtenga una licencia, los requirements varían según el estado."
+  },
+  "id7": {
+    "title": "Técnico de Laboratorio Dental",
+    "description": "Los técnicos dentales fabrican prótesis dentales, tales como puentes, coronas y prótesis dentales según las especificaciones enviadas por el dentista.",
+    "education": "Sin requirements educativos específicos, muchos aprenden sus habilidades en el trabajo, los aspirantes a profesionales también pueden recibir capacitación de colegios comunitarios o escuelas vocacionales y técnicas.",
+    "requirements": ""
+  },
+  "id8": {
+    "title": "Dentista General",
+    "description": "El dentista general generalmente realiza servicios de prevención y mantenimiento de la atención dental y de la salud oral, como la limpieza de los dientes, los tratamientos con flúor, los empastes de la cavidad y los conductos radiculares. En algunos casos, el dentista general también puede tratar enfermedades de los nervios, la pulpa y otros tratamientos dentales. Tejidos que afectan la higiene bucal y retención de dientes.",
+    "education": "Escuela dental completa.",
+    "requirements": "Obtener una licencia."
+  },
+  "id9": {
+    "title": "Ortodoncista",
+    "description": "Los ortodoncistas se especializan en la alineación de la mandíbula y la posición de los dientes. Usan diferentes métodos y aparatos orales para enderezar y realinar los dientes torcidos o desalineados. Se utilizan aparatos ortopédicos, retenedores y otros dispositivos para ayudar a corregir los dientes del paciente.",
+    "education": "Escuela dental completa y dos o tres años de educación avanzada avanzada.",
+    "requirements": "Obtenga una licencia, los requirements varían según el estado."
+  },
+  "id10": {
+    "title": "Periodoncista",
+    "description": "Un periodoncista es un dentista que se especializa en el cuidado de las estructuras de soporte de los dientes que se conocen como periodonto, como las encías, el hueso alveolar y el ligamento periodontal. Las enfermedades periontales suelen ser el resultado de la acumulación de bacterias y la inflamación. ",
+    "education": "Escuela dental completa y obtener un certificado postdoctoral (tres años o más).",
+    "requirements": "Obtenga una licencia, los requirements varían según el estado."
+  },
+  "id11": {
+    "title": "Cirujano Oral y Maxilofacial",
+    "description": "Un cirujano oral y maxilofacial brinda atención quirúrgica para los dientes, mandíbulas y huesos faciales. Algunos cirujanos también se especializan en reconstrucción microvascular (después del cáncer de cuello y cabeza), cirugía craneofacial y cirugía maxilofacial pediátrica (por ejemplo, reparación de labio y paladar hendido ) o tratamiento de trauma craneo-maxilofacial.",
+    "education": "CompletarCompletar la escuela dental y un mínimo de cuatro años en un programa de residencia en un hospital.",
+    "requirements": "Obtenga una licencia, los requirements varían según el estado."
+  }
+}
