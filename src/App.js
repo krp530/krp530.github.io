@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 // import About from './containers/About';
 // import Counter from './containers/Counter';
@@ -41,11 +41,13 @@ class App extends Component {
       <div className={classes.root}>
         <AppBar position="static" changeLanguage={this.changeLanguage} />
 
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/:category" component={JobListing} />
-          <Route exact path="/:category/:id" component={JobDetail} />
-        </Switch>
+        <HashRouter>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/:category" component={JobListing} />
+            <Route exact path="/:category/:id" component={JobDetail} />
+          </Switch>
+        </HashRouter>
 
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
