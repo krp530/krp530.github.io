@@ -32,4 +32,4 @@ render(
 )
 
 
-// registerServiceWorker();
+registerServiceWorker();
